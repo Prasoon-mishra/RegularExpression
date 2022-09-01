@@ -13,7 +13,7 @@ namespace RegExe
         public Regex LastNameReg = new Regex(@"[A-Z][a-zA-Z]{2,}$");
         public Regex EmailAddress = new Regex(@"^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][A-Za-z]{2,})?$");
         public Regex MobileNumberRegex = new Regex(@"[0-9]{2}\s[0-9]{10}$");
-        public Regex Pass = new Regex(@"[A-Z][a-z][0-9][!@#$%^&*]{8,}$");
+        public Regex PassRegex = new Regex(@"(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}");//have to enforce the presence of at least one of each.
         public void ValidateFirstName(string FirstName)
         {
             Console.WriteLine("\n First Name: "+FirstName);
@@ -59,13 +59,13 @@ namespace RegExe
         public void Validate_Password(string password)
         {
             Console.WriteLine("The password is : "+ password);
-            if(Pass.IsMatch(password))
+            if(PassRegex.IsMatch(password))
             {
-                Console.WriteLine("Password is Valid");
+                Console.WriteLine("Password is Valid  "+password);
             }
             else
             {
-                Console.WriteLine("Password is Invalid");
+                Console.WriteLine("Password is Invalid   "+password);
             }
         }
     }
