@@ -22,14 +22,14 @@ namespace RegExe
             else
                 Console.WriteLine("Invalid First Name");
         }
-        //public void ValidateLastName(string LastName)
-        //{
-        //    Console.WriteLine("\n Last Name: " + LastName);
-        //    if (LastNameReg.IsMatch(LastName))
-        //        Console.WriteLine("Valid Last Name");
-        //    else
-        //        Console.WriteLine("Invalid Last Name");
-        //}
+        public void ValidateLastName(string LastName)
+        {
+            Console.WriteLine("\n Last Name: " + LastName);
+            if (LastNameReg.IsMatch(LastName))
+                Console.WriteLine("Valid Last Name");
+            else
+                Console.WriteLine("Invalid Last Name");
+        }
         //public void ValidateMobile(string PhoneNumber)
         //{
         //    Console.WriteLine("\n Mobile number : "+ PhoneNumber);
