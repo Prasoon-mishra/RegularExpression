@@ -30,31 +30,31 @@ namespace RegExe
             else
                 Console.WriteLine("Invalid Last Name");
         }
-        //public void ValidateMobile(string PhoneNumber)
-        //{
-        //    Console.WriteLine("\n Mobile number : "+ PhoneNumber);
-        //    if(MobileNumberRegex.IsMatch(PhoneNumber))
-        //    {
-        //        Console.WriteLine("Valid Mobile Number");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Invalid Mobile Number");
-        //    }
-        //}
+        public void ValidateMobile(string PhoneNumber)
+        {
+            Console.WriteLine("\n Mobile number : " + PhoneNumber);
+            if (MobileNumberRegex.IsMatch(PhoneNumber))
+            {
+                Console.WriteLine("Valid Mobile Number");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Mobile Number");
+            }
+        }
 
-        //public void ValidateEmailAddress(String Email)
-        //{
-        //    Console.WriteLine("\n EmailAddress : " + Email);
-        //    if (EmailAddress.IsMatch(Email))
-        //    {
-        //        Console.WriteLine("Vaild Email Address");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Invalid email address");
-        //    }
-        //}
+        public void ValidateEmailAddress(String Email)
+        {
+            Console.WriteLine("\n EmailAddress : " + Email);
+            if (EmailAddress.IsMatch(Email))
+            {
+                Console.WriteLine("Vaild Email Address");
+            }
+            else
+            {
+                Console.WriteLine("Invalid email address");
+            }
+        }
 
         //public void Validate_Password(string password)
         //{
