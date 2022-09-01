@@ -56,17 +56,17 @@ namespace RegExe
             }
         }
 
-        //public void Validate_Password(string password)
-        //{
-        //    Console.WriteLine("The password is : "+ password);
-        //    if(PassRegex.IsMatch(password))
-        //    {
-        //        Console.WriteLine("Password is Valid  "+password);
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Password is Invalid   "+password);
-        //    }
-        //}
+        public void Validate_Password(string password)
+        {
+            Console.WriteLine("The password is : " + password);
+            if (PassRegex.IsMatch(password))
+            {
+                Console.WriteLine("Password is Valid  " + password);
+            }
+            else
+            {
+                Console.WriteLine("Password is Invalid   " + password);
+            }
+        }
     }
 }
